@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="48"
+   height="24"
+   id="svg3122">
+  <defs
+     id="defs3124" />
+  <metadata
+     id="metadata3127">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-1028.3622)"
+     id="layer0">
+    <rect
+       width="24"
+       height="7.9999943"
+       rx="2"
+       ry="2"
+       x="0"
+       y="1036.3622"
+       id="rect3817-1-9"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="m 13,20 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
+       transform="matrix(2.500005,0,0,2.500005,-10.500045,990.36212)"
+       id="path4036"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       width="24"
+       height="24"
+       x="0"
+       y="1028.3622"
+       id="rect3901"
+       style="color:#000000;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="m 13,20 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
+       transform="matrix(2,0,0,2,-6,1000.3622)"
+       id="path3903"
+       style="color:#000000;fill:#f02a10;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="m 13,20 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
+       transform="matrix(1.2500175,0,0,1.2500175,0.749833,1015.3619)"
+       id="path4034"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       width="20.000004"
+       height="4.0000005"
+       rx="0.5"
+       ry="0.49999994"
+       x="2"
+       y="1038.3622"
+       id="rect3827-1-4"
+       style="color:#000000;fill:#104998;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+  <g
+     transform="translate(24,-1028.3622)"
+     id="layer1">
+    <rect
+       width="24"
+       height="24"
+       x="0"
+       y="1028.3622"
+       id="rect3878"
+       style="color:#000000;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       width="22"
+       height="15.999993"
+       rx="2"
+       ry="1.9999999"
+       x="1"
+       y="1032.3622"
+       id="rect4012"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       width="18"
+       height="12.000002"
+       rx="1"
+       ry="1"
+       x="3"
+       y="1034.3622"
+       id="rect4014"
+       style="color:#000000;fill:#f02a10;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       width="18"
+       height="1.25"
+       x="3"
+       y="1037.1122"
+       id="rect4016"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       width="18"
+       height="1.25"
+       x="3"
+       y="1042.3622"
+       id="rect4018"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="m 7,1033.3622 7,4.5 -7,5 7,4.5 3,0 -7,-4.5 7,-5 -7,-4.5 z"
+       inkscape:connector-curvature="0"
+       id="path4022"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+</svg>
