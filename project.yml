@@ -45,7 +45,7 @@ layers:
   - contour.label
 maxzoom: 22
 minzoom: 0
-name: FauxGoog
+name: Emerald
 source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
