@@ -122,7 +122,8 @@
   // to use shaves a bit off the final project.xml size
   [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
   [ldir='NE'],[ldir='SE'],[ldir='SW'],[ldir='NW'] {
-    shield-file: url("shield/dot-small.png");
+    shield-file: url("shield/dot.svg");
+    shield-transform:scale(0.3,0.3);
     shield-unlock-image: true;
     shield-name: @name;
     shield-size: 12;
@@ -296,7 +297,7 @@
 @us-shield-name: "[ref].replace(';.*', '').replace('^[^\d]*', '')";
 #road_label::us_shield[reflen>0][reflen<=6]{
   // Default shields
-  shield-file: url("shield/motorway_lg_[reflen].png");
+  shield-file: url("shield/motorway_[reflen].svg");
   shield-name: [ref];
   shield-face-name: 'PT Sans Bold', 'Open Sans Regular';
   shield-size: 11;
@@ -304,7 +305,7 @@
   shield-min-padding: 50;
   shield-min-distance:120;
   shield-character-spacing:-0.5;
-
+  [reflen>2]{shield-character-spacing:-0.75}
   [zoom>=11] { shield-min-distance: 100; }
   [zoom>=16] {   shield-min-padding: 50;}
 
