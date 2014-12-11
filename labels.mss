@@ -203,13 +203,16 @@
   [type='suburb'],
   [type='neighbourhood'] {
     text-fill: #633;
-    text-face-name:	@sans_bd;
+    text-face-name:	@sans_it;
     text-transform: none;
-      text-halo-radius: 1;
+    text-margin:50;
+    text-halo-radius: 2;
     text-character-spacing: 0.5;
-    [zoom>=14] { text-size: 11; }
-    [zoom>=15] { text-size: 12; text-character-spacing: 1; }
-    [zoom>=16] { text-size: 14; text-character-spacing: 2; }
+    text-size: 12;
+    [zoom>=14] { text-size: 14; }
+    [zoom>=15] { text-size: 16; text-character-spacing: 1; }
+    [zoom>=16] { text-size: 18; text-character-spacing: 2; }
+    [zoom>=18] { text-size: 24; text-character-spacing: 3; }
   }
 }
 
@@ -225,14 +228,11 @@
   marker-height: 12;
   marker-allow-overlap: false;
 
-   [zoom>14] {
-    marker-file: url("rail/[network]-18.svg");
-    marker-height:18;
+   [zoom>13] {
+    marker-height:16;
   }
   [zoom>15] {
-    marker-file: url("rail/[network]-18.svg");
     marker-height:24;
-
     text-name: @name;
     text-face-name: @sans_md;
     text-fill: #333;
@@ -327,9 +327,9 @@
   [ref =~ '^US\ ?\d[\dA-Z]?(;.*|$)'] {
     shield-file: url(shield/us_highway_2.svg);
     shield-name: @us-shield-name;      
-    shield-character-spacing:-0.75;
-    shield-transform:scale(0.85,0.85);
-    [zoom>=14]{shield-transform:scale(1,1);
+    shield-character-spacing:-0.5;
+    shield-transform:scale(1.4, 1.4);
+    [zoom>=14]{
           shield-character-spacing:-0.5;
     }
 
@@ -339,7 +339,7 @@
     shield-file: url(shield/us_highway_3.svg);
     shield-name: @us-shield-name;
     shield-character-spacing:-1.5;
-    shield-transform:scale(0.85,0.85);
+    shield-transform:scale(1.4,1.4);
 
   }
   // 1 & 2 digit US Interstates

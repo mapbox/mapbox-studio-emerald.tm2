@@ -218,15 +218,16 @@
       #road, #bridge { line-cap: round; }
       [zoom>=16] { line-width:2; line-color:#fff; }
     }
+    
+    // railroad crosshatches
     [class='major_rail'] {
-      line-width: 0.4;
-      line-color: #bbb;
+      line-width: 0.3;
+      line-color: #999;
       [zoom>=16] {
-        line-width: 0.75;
       	// Hatching
-      	h/line-width: 3;
+      	h/line-width: 2;
       	h/line-color: #bbb;
-      	h/line-dasharray: 1,31;
+      	h/line-dasharray: 1,10;
       }
     }
   }
