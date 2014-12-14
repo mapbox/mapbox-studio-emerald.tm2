@@ -197,7 +197,10 @@ Map {
   line-color: mix(@land, #000, 85);
   line-geometry-transform:translate(-1,-1);
   line-clip:false;
-  [zoom>=18] {
+  [zoom>=17] {
+    line-width:0.5;
+  }
+    [zoom>=18] {
       polygon-geometry-transform:translate(-1,-2);
         line-geometry-transform:translate(-1,-2);
       line-width:0.75;

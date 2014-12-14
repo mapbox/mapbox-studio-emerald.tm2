@@ -205,11 +205,11 @@
     text-fill: #633;
     text-face-name:	@sans_it;
     text-transform: none;
-    text-margin:50;
-    text-halo-radius: 2;
+    text-margin:80;
+    text-halo-radius: 2.5;
     text-character-spacing: 0.5;
-    text-size: 12;
-    [zoom>=14] { text-size: 14; }
+    text-size: 14;
+    [zoom>=14] { text-size: 15; }
     [zoom>=15] { text-size: 16; text-character-spacing: 1; }
     [zoom>=16] { text-size: 18; text-character-spacing: 2; }
     [zoom>=18] { text-size: 24; text-character-spacing: 3; }
