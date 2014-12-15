@@ -15,7 +15,7 @@
 // - Spanish: '[name_es]'
 // - German: '[name_de]'
 @name: '[name]';  
-
+@name_en: '[name_en]';  
 
 // ---------------------------------------------------------------------
 // Fonts
@@ -38,7 +38,7 @@
 // optimizing the arrangement to fit as many as possible in densely-
 // labeled areas.
 #country_label[zoom>=2] {
-  text-name: @name;
+  text-name: @name_en;
   text-face-name: @sans_bd;
   text-transform: uppercase;
   text-wrap-width: 100;
