@@ -244,6 +244,7 @@
     text-placement-type: simple;
     text-dx: 11; text-dy: 11;
     text-placements: "S,N,E,W";
+        text-min-padding:1;
   }
   // text labels first come in at zoom 16
   [zoom>=16] {

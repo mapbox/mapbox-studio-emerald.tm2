@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-0.0893,51.5154,17</Parameter>
+  <Parameter name="center">37.6061,55.7513,16</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -8556,7 +8556,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 1)</Filter>
     <MarkersSymbolizer height="24" file="rail/[network]-18.svg" allow-overlap="false" />
-    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -8574,7 +8574,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 3)</Filter>
     <MarkersSymbolizer height="24" file="rail/[network]-18.svg" allow-overlap="false" />
-    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -8592,7 +8592,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
     <MarkersSymbolizer height="24" file="rail/[network]-18.svg" allow-overlap="false" />
-    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
