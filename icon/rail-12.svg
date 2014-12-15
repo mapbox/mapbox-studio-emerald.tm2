@@ -104,7 +104,7 @@
        d="M 4.75 1 L 3 2.5 L 3 8 L 10 8 L 10 2.5 L 8 1 L 4.75 1 z M 5 2 L 8 2 L 8 3 L 5 3 L 5 2 z M 4 4 L 9 4 L 9 5 L 4 5 L 4 4 z M 4 6 L 5 6 L 5 7 L 4 7 L 4 6 z M 8 6 L 9 6 L 9 7 L 8 7 L 8 6 z M 4 8.5 L 4 9 L 3 9.5 L 3 10 L 6 10 L 6 9 L 6 8.5 L 4 8.5 z M 7 8.5 L 7 10 L 10 10 L 10 9.5 L 9 9 L 9 8.5 L 7 8.5 z "
        style="fill:brown;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;opacity:0.3" />
     <path
-       style="fill:#brown;fill-opacity:1;stroke:none"
+       style="fill:brown;fill-opacity:1;stroke:none"
        d="M 4.75 1 L 3 2.5 L 3 8 L 10 8 L 10 2.5 L 8 1 L 4.75 1 z M 5 2 L 8 2 L 8 3 L 5 3 L 5 2 z M 4 4 L 9 4 L 9 5 L 4 5 L 4 4 z M 4 6 L 5 6 L 5 7 L 4 7 L 4 6 z M 8 6 L 9 6 L 9 7 L 8 7 L 8 6 z M 4 8.5 L 4 9 L 3 9.5 L 3 10 L 6 10 L 6 9 L 6 8.5 L 4 8.5 z M 7 8.5 L 7 10 L 10 10 L 10 9.5 L 9 9 L 9 8.5 L 7 8.5 z "
        transform="translate(0,1040.3622)"
        id="path3212" />
