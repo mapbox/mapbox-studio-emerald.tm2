@@ -268,7 +268,7 @@
     // can use that in our url expression.
     // Not all POIs have a Maki icon assigned, so we limit this section
     // to those that do. See also <https://www.mapbox.com/maki/>
-    marker-fill:#666;
+    marker-fill:#888;
         marker-height:12;
     marker-file:url('icon/[maki]-12.svg');
   }
@@ -277,7 +277,7 @@
     text-face-name: @sans_md;
     text-size: 12;
     text-margin:1;
-    text-fill: #666;
+    text-fill: #888;
     text-halo-fill: fadeout(#fff, 50%);
     text-halo-radius: 1;
     text-halo-rasterizer: fast;
