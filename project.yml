@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 37.6061
-  - 55.7513
-  - 16
+  - -122.4219
+  - 37.7638
+  - 14
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -32,7 +32,6 @@ layers:
   - road
   - bridge
   - admin
-  - country_label_line
   - country_label
   - marine_label
   - state_label
@@ -46,7 +45,7 @@ layers:
 maxzoom: 22
 minzoom: 0
 name: Emerald
-source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"
 styles: 
   - style.mss
   - road.mss

@@ -64,18 +64,11 @@
   }
 }
 
-#country_label_line {
-  // Lines that connect offset labels to small
-  // island & coastal countries at small scales.
-  line-color: #fff;
-  line-dasharray: 3,1;
-}
-
-
 // ---------------------------------------------------------------------
 // Marine
 
-#marine_label {
+#marine_label[zoom>=2]["mapnik::geometry_type"=1],
+#marine_label[zoom>=2]["mapnik::geometry_type"=2] {
   text-name: @name;
   text-face-name: @sans_it;
   text-wrap-width: 60;
@@ -84,14 +77,14 @@
   text-halo-fill: fadeout(#fff, 75%);
   text-halo-radius: 1.5;
   text-size: 10;
-  text-character-spacing: 1;
-  // Some marine labels should be drawn along a line 
-  // rather than on a point (the default)
-  [placement='line'] {
-    text-placement: line;
-    text-avoid-edges: true;
+  text-character-spacing: 1; 
+  ["mapnik::geometry_type"=1] {
+    text-placement: point;
+    text-wrap-width: 30;
   }
-  
+  ["mapnik::geometry_type"=2] {
+    text-placement: line;
+  }
   // Oceans
   [labelrank=1] { 
     text-size: 18;
@@ -117,7 +110,7 @@
 
 // City labels with dots for low zoom levels.
 // The separate attachment keeps the size of the XML down.
-#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=3] {
+#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=1] {
   // explicitly defining all the `ldir` values wer'e going
   // to use shaves a bit off the final project.xml size
   [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
@@ -147,7 +140,7 @@
   }
 }
 
-#place_label[zoom>=8][localrank<=3] {
+#place_label[zoom>=8][localrank<=1] {
   text-name: @name;
   text-face-name: @sans;
   text-wrap-width: 80;
@@ -255,7 +248,6 @@
     }
   
 }
-
 
 #poi_label[zoom>=13][scalerank<=1],
 #poi_label[zoom>=15][scalerank<=2],
