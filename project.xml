@@ -5,12 +5,12 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-122.4219,37.7638,14</Parameter>
+  <Parameter name="center">-122.4553,37.7308,12</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[Emerald]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -28,10 +28,6 @@
 <FontSet name="fontset-3">
   <Font face-name="Open Sans Regular"/>
   <Font face-name="Arial Unicode MS Regular"/>
-</FontSet>
-<FontSet name="fontset-4">
-  <Font face-name="PT Sans Bold"/>
-  <Font face-name="Open Sans Regular"/>
 </FontSet>
 <Style name="landcover" filter-mode="first">
   <Rule>
@@ -7883,26 +7879,22 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>admin</StyleName>  </Layer>
 
-<Layer name="country_label_line"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
 <Style name="country_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 2)</Filter>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <Filter>([scalerank] &gt; 3)</Filter>
     <TextSymbolizer size="15" fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([scalerank] = 2)</Filter>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] &gt; 3)</Filter>
     <TextSymbolizer size="12" fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([scalerank] = 2)</Filter>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] &gt; 3)</Filter>
     <TextSymbolizer fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" size="8" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -7940,20 +7932,20 @@
     <TextSymbolizer fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" size="8" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
     <TextSymbolizer size="15" fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
     <TextSymbolizer size="12" fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
     <TextSymbolizer fontset-name="fontset-0" text-transform="uppercase" wrap-width="100" wrap-before="true" fill="#333344" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" line-spacing="-4" character-spacing="0.5" size="8" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -7968,17 +7960,6 @@
 <Style name="marine_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="14" character-spacing="2" placement="point" wrap-width="30" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="11" placement="point" wrap-width="30" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
     <TextSymbolizer size="14" character-spacing="2" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -7990,14 +7971,14 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="16" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="14" character-spacing="2" placement="point" wrap-width="30" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="14" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="11" placement="point" wrap-width="30" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
@@ -8012,14 +7993,14 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="22" wrap-width="120" character-spacing="4" line-spacing="8" placement="point" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer size="16" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="18" wrap-width="120" character-spacing="4" line-spacing="8" placement="point" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer size="14" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
@@ -8034,14 +8015,14 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <TextSymbolizer size="12" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="22" wrap-width="120" character-spacing="4" line-spacing="8" placement="point" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" size="10" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="18" wrap-width="120" character-spacing="4" line-spacing="8" placement="point" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
@@ -8053,6 +8034,17 @@
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1)</Filter>
     <TextSymbolizer placement="point" wrap-width="30" fontset-name="fontset-1" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" size="10" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2)</Filter>
+    <TextSymbolizer size="12" placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2)</Filter>
+    <TextSymbolizer placement="line" fontset-name="fontset-1" wrap-width="60" wrap-before="true" fill="#74aee9" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" size="10" character-spacing="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="marine_label"
@@ -8388,14 +8380,8 @@
     <TextSymbolizer dy="8" fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer dy="8" fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -8438,14 +8424,8 @@
     <TextSymbolizer dy="8" fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'Rail Station') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer dy="8" fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] != 'Rail Station') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -8471,20 +8451,8 @@
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -8494,14 +8462,8 @@
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([scalerank] &lt;= 2)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([type] != 'Rail Station') and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -8522,31 +8484,13 @@
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] != 'Rail Station') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'Rail Station') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([type] != 'Rail Station') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] != 'Rail Station') and ([scalerank] &lt;= 2)</Filter>
+    <Filter>([scalerank] &lt;= 1) and ([type] != 'Rail Station')</Filter>
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'Rail Station') and ([scalerank] &lt;= 2)</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([type] != 'Rail Station')</Filter>
     <TextSymbolizer fontset-name="fontset-2" size="12" margin="1" fill="#888888" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="60" line-spacing="-4" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -8562,8 +8506,14 @@
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
@@ -8573,8 +8523,14 @@
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
+    <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
@@ -8595,13 +8551,25 @@
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 1) and ([maki] != null)</Filter>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 2)</Filter>
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([maki] != null)</Filter>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 2)</Filter>
     <MarkersSymbolizer fill="#888888" height="12" file="icon/[maki]-12.svg" />
   </Rule>
   <Rule>
@@ -8613,6 +8581,24 @@
 <Style name="poi_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer height="24" file="rail/[network]-18.svg" allow-overlap="false" />
+    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer height="16" file="rail/[network]-18.svg" allow-overlap="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer file="rail/[network]-18.svg" height="12" allow-overlap="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 1)</Filter>
     <MarkersSymbolizer height="24" file="rail/[network]-18.svg" allow-overlap="false" />
     <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
@@ -8645,24 +8631,6 @@
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 3)</Filter>
-    <MarkersSymbolizer file="rail/[network]-18.svg" height="12" allow-overlap="false" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
-    <MarkersSymbolizer height="24" file="rail/[network]-18.svg" allow-overlap="false" />
-    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="12" line-spacing="-2" fontset-name="fontset-2" fill="#333333" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
-    <MarkersSymbolizer height="16" file="rail/[network]-18.svg" allow-overlap="false" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
     <MarkersSymbolizer file="rail/[network]-18.svg" height="12" allow-overlap="false" />
   </Rule>
 </Style>
@@ -8692,563 +8660,37 @@
     <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#333333" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="2" halo-rasterizer="fast" size="12" margin="20" avoid-edges="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Style name="road_label-us_shield" filter-mode="first">
+<Style name="road_label-shield-pt" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'motorway') and ([localrank] = 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer placement="point" avoid-edges="false" size="9" line-spacing="-4" file="shield/[shield]-[reflen].svg" fontset-name="fontset-3" fill="#333333" ><![CDATA[[ref].replace('·', '\n')]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([class] = 'motorway') and ([localrank] = 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer placement="point" avoid-edges="false" size="9" line-spacing="-4" file="shield/[shield]-[reflen].svg" fontset-name="fontset-3" fill="#333333" ><![CDATA[[ref].replace('·', '\n')]]></ShieldSymbolizer>
+  </Rule>
+</Style>
+<Style name="road_label-shield-ln" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" character-spacing="0" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" character-spacing="0" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" character-spacing="0" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" character-spacing="0" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" shield-dy="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_3.svg" transform="scale(0.85,0.85)" fill="#ffffff" character-spacing="-1" shield-dy="-1" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer shield-dy="-0.5" minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-padding="50" minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d\d[\dA-Z](;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" character-spacing="0" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" fill="#ffffff" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" character-spacing="0" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" fill="#ffffff" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" character-spacing="0" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" fill="#ffffff" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
+    <Filter>([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer minimum-distance="100" transform="scale(1.25,1.25)" size="11" placement="line" spacing="400" avoid-edges="true" line-spacing="-4" file="shield/[shield]-[reflen].svg" fontset-name="fontset-3" fill="#333333" ><![CDATA[[ref].replace('·', '\n')]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" shield-dy="0" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" minimum-distance="100" fontset-name="fontset-4" size="11" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="-1" file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_interstate_2.svg" transform="scale(0.8,0.8)" character-spacing="-1" fill="#ffffff" shield-dy="0" fontset-name="fontset-4" size="11" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer shield-dy="0" file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer shield-dy="0" minimum-padding="50" minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-padding="50" minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^I\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_highway_3.svg" transform="scale(1.4,1.4)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_highway_3.svg" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_highway_2.svg" transform="scale(1.4,1.4)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_highway_2.svg" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_2.svg" character-spacing="0" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_2.svg" character-spacing="0" transform="scale(1.4,1.4)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_state_3.svg" transform="scale(0.85,0.85)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_state_3.svg" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_state_2.svg" transform="scale(0.85,0.85)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer character-spacing="0" file="shield/us_state_2.svg" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer character-spacing="0" minimum-padding="50" minimum-distance="100" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer character-spacing="0" minimum-distance="100" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([ref].match('^US\ ?\d[\dA-Z]?(;.*|$)')) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^US\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_highway_3.svg" character-spacing="-1" transform="scale(1.4,1.4)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_3.svg" character-spacing="-1" transform="scale(0.85,0.85)" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-padding="50" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" minimum-distance="100" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6) and ([ref].match('^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'))</Filter>
-    <ShieldSymbolizer file="shield/us_state_2.svg" transform="scale(0.85,0.85)" character-spacing="-1" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref].replace(';.*', '').replace('^[^\d]*', '')]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-padding="50" minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer minimum-distance="100" character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &lt;= 6) and ([reflen] &gt; 2)</Filter>
-    <ShieldSymbolizer character-spacing="-1" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer minimum-padding="50" minimum-distance="100" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" character-spacing="0" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer minimum-distance="100" file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" character-spacing="0" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([reflen] &gt; 0) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer file="shield/motorway_[reflen].svg" fontset-name="fontset-4" size="11" fill="#444444" minimum-padding="50" minimum-distance="120" character-spacing="0" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <Filter>([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer placement="line" spacing="400" minimum-distance="50" avoid-edges="true" size="9" line-spacing="-4" file="shield/[shield]-[reflen].svg" fontset-name="fontset-3" fill="#333333" ><![CDATA[[ref].replace('·', '\n')]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="road_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>road_label-us_shield</StyleName>
+    <StyleName>road_label-shield-ln</StyleName>
+    <StyleName>road_label-shield-pt</StyleName>
     <StyleName>road_label</StyleName>  </Layer>
 
 <Layer name="waterway_label"

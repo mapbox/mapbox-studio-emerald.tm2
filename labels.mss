@@ -287,77 +287,39 @@
 
 // ---------------------------------------------------------------------
 // Roads
+
 @us-shield-name: "[ref].replace(';.*', '').replace('^[^\d]*', '')";
-#road_label::us_shield[reflen>0][reflen<=6]{
-  // Default shields
-  shield-file: url("shield/motorway_[reflen].svg");
-  shield-name: [ref];
-  shield-face-name: 'PT Sans Bold', 'Open Sans Regular';
-  shield-size: 11;
-  shield-fill: #444;
-  shield-min-padding: 50;
-  shield-min-distance:120;
-  shield-character-spacing:-0.5;
-  [reflen>2]{shield-character-spacing:-0.75}
-  [zoom>=11] { shield-min-distance: 100; }
-  [zoom>=16] {   shield-min-padding: 50;}
 
-  // 1 & 2 digit US state highways
-  [ref =~ '^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d[\dA-Z]?(;.*|$)'] {
-    shield-file: url(shield/us_state_2.svg);
-    shield-name: @us-shield-name;
-    shield-transform:scale(0.85,0.85);
-    shield-character-spacing:-0.75;
-  }
-  // 3 digit US state highways
-  [ref =~ '^(AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MT|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|SR)\ ?\d\d[\dA-Z](;.*|$)'] {
-    shield-file: url(shield/us_state_3.svg);
-    shield-name: @us-shield-name;
-    shield-character-spacing:-1;
-    shield-transform:scale(0.85,0.85);
-  }
-  // 1 & 2 digit US highways
-  [ref =~ '^US\ ?\d[\dA-Z]?(;.*|$)'] {
-    shield-file: url(shield/us_highway_2.svg);
-    shield-name: @us-shield-name;      
-    shield-character-spacing:-0.5;
-    shield-transform:scale(1.4, 1.4);
-    [zoom>=14]{
-          shield-character-spacing:-0.5;
-    }
-
-  }
-  // 3 digit US highways
-  [ref =~ '^US\ ?\d\d[\dA-Z](;.*|$)'] {
-    shield-file: url(shield/us_highway_3.svg);
-    shield-name: @us-shield-name;
-    shield-character-spacing:-1.5;
-    shield-transform:scale(1.4,1.4);
-
-  }
-  // 1 & 2 digit US Interstates
-  [ref =~ '^I\ ?\d[\dA-Z]?(;.*|$)'] {
-    shield-file: url(shield/us_interstate_2.svg);
-    shield-name: @us-shield-name;
-    shield-transform:scale(0.8,0.8);
-    shield-character-spacing:-0.75;
-    shield-fill: #fff;
-    shield-dy: 0;
-    [zoom>=10]{shield-dy: -1;}
-    [zoom>=19]{shield-dy: 0;}
-  }
-  // 3 digit US Interstates
-  [ref =~ '^I\ ?\d\d[\dA-Z](;.*|$)'] {
-    shield-file: url(shield/us_interstate_3.svg);
-    shield-name: @us-shield-name;
-    shield-transform:scale(0.85,0.85);
-    shield-fill: #fff;
-    shield-character-spacing:-0.75;
-    shield-dy: -1;
-    [zoom>=13][zoom<=15]{shield-dy: -0.5;}
+#road_label::shield-pt[class='motorway'][zoom>=7][zoom<=10][localrank=1][reflen<=6],
+#road_label::shield-pt[class='motorway'][zoom>=9][zoom<=10][localrank=1][reflen<=6],
+#road_label::shield-ln[zoom>=11][reflen<=6] {
+  shield-name: "[ref].replace('·', '\n')";
+  shield-size: 9;
+  shield-line-spacing: -4;
+  shield-file: url('shield/[shield]-[reflen].svg');
+  shield-face-name: @sans;
+  shield-fill: #333;
+  [zoom>=14] {
+    shield-transform: scale(1.25,1.25);
+    shield-size: 11;
   }
 }
 
+#road_label::shield-pt[class='motorway'][zoom>=7][zoom<=10][localrank=1][reflen<=6],
+#road_label::shield-pt[class='motorway'][zoom>=9][zoom<=10][localrank=1][reflen<=6] {
+  shield-placement: point;
+  shield-avoid-edges: false;
+}
+
+#road_label::shield-ln[zoom>=11][reflen<=6] {
+  shield-placement: line;
+  shield-spacing: 400;
+  shield-min-distance: 50;
+  shield-avoid-edges: true;
+  [zoom>=14] {
+    shield-min-distance: 100;
+    }
+}
 
 #road_label {
   text-name: @name;
