@@ -72,7 +72,6 @@
   text-name: @name;
   text-face-name: @sans_it;
   text-wrap-width: 60;
-  text-wrap-before: true;
   text-fill: darken(@water, 10);
   text-halo-fill: fadeout(#fff, 75%);
   text-halo-radius: 1.5;
@@ -88,7 +87,6 @@
   // Oceans
   [labelrank=1] { 
     text-size: 18;
-    text-wrap-width: 120;
     text-character-spacing:	4;
     text-line-spacing:	8;
   }
