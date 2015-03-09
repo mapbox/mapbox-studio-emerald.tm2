@@ -8229,97 +8229,97 @@
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="-4" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-4" dy="-4" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="-4" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-4" dy="-4" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="4" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-4" dy="4" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="4" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-4" dy="4" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer dx="4" dy="4" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="4" dy="4" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer dx="4" dy="4" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="4" dy="4" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer dx="4" dy="-4" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="4" dy="-4" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer dx="4" dy="-4" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="4" dy="-4" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer dy="5" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dy="5" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer dy="5" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dy="5" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer dy="-5" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dy="-5" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer dy="-5" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dy="-5" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer dx="-5" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-5" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer dx="-5" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-5" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer dx="5" size="14" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="5" size="14" file="shield/dot.svg" unlock-image="true" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer dx="5" file="shield/dot.svg" transform="scale(0.3,0.3)" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="5" file="shield/dot.svg" unlock-image="true" size="12" fontset-name="fontset-3" placement="point" fill="#333333" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-rasterizer="fast" margin="30" ><![CDATA[[name]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="place_label"
