@@ -1,6 +1,6 @@
 {
-    "name": "mapbox-studio-emerald",
-    "version": "2.2.3",
-    "description": "A full-featured example project for Mapbox Studio",
-    "main": "./package.json"
+  "name": "@mapbox/mapbox-studio-emerald",
+  "version": "2.2.3",
+  "description": "A full-featured example project for Mapbox Studio",
+  "main": "./package.json"
 }
